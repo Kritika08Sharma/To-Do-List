@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="About Us"
+        android:id="@+id/about"
+        android:orderInCategory="8"
+        app:showAsAction="never"
+        />
+
+    <item android:title="Settings"
+        android:id="@+id/set"
+        android:orderInCategory="9"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="10"
+        android:title="Create"
+        app:showAsAction="always"
+        />
+</menu>

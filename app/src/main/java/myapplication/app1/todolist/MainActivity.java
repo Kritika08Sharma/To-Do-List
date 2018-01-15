@@ -7,8 +7,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import static android.R.attr.id;
 
@@ -17,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
     TabLayout Tab;
     ViewPager ViewPg;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -43,6 +47,32 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.about :
+                Toast.makeText(this,"this is about us",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.set :
+                Toast.makeText(this,"this is setting",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.add :
+                Toast.makeText(this,"this is create",Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                Toast.makeText(this,"this is create",Toast.LENGTH_SHORT).show();
+
+        }
+
+        return true;
     }
 
     class PagerAdapter extends FragmentPagerAdapter{
