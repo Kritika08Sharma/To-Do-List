@@ -10,6 +10,8 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/Tab"
         layout_centerHorizontal="true"
+        app:tabBackground="@color/aqua"
+        app:tabTextColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.app1.todolist.AboutUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dev"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:id="@+id/developedBy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dev_1_name"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Krits"
+        android:textColor="#000000"
+        android:layout_below="@+id/developedBy"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DescDev1"
+        android:text="@string/dev1desc"
+        android:layout_below="@+id/Krits"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dev_2_name"
+        android:textStyle="bold"
+        android:id="@+id/shaivee"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/DescDev1"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DescDev2"
+        android:text="@string/dev1desc"
+        android:layout_below="@+id/shaivee"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</RelativeLayout>

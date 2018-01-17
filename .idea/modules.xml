@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\Dell\Desktop\To-Do-List-master (1)\To-Do-List-master\To-Do-List.iml" filepath="C:\Users\Dell\Desktop\To-Do-List-master (1)\To-Do-List-master\To-Do-List.iml" />
+      <module fileurl="file://C:/Users/Dell/Desktop/To-Do-List-master (1)/To-Do-List-master/To-Do-List.iml" filepath="C:/Users/Dell/Desktop/To-Do-List-master (1)/To-Do-List-master/To-Do-List.iml" />
       <module fileurl="file://$PROJECT_DIR$/To-Do-List-master.iml" filepath="$PROJECT_DIR$/To-Do-List-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToDoList.iml" filepath="$PROJECT_DIR$/ToDoList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

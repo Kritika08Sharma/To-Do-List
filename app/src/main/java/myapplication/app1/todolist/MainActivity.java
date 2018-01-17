@@ -1,5 +1,6 @@
 package myapplication.app1.todolist;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout Tab;
     ViewPager ViewPg;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -59,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.about :
-                Toast.makeText(this,"this is about us",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"this is about us",Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(intent);
                 break;
             case R.id.set :
                 Toast.makeText(this,"this is setting",Toast.LENGTH_SHORT).show();
