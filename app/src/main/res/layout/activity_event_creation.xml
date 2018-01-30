@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.app1.todolist.EventCreation">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+     <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb1"
+        android:id="@+id/rb1"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="55dp"
+         android:layout_marginLeft="5dp"
+         android:textSize="20dp"
+
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb2"
+        android:id="@+id/rb2"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb3"
+        android:layout_marginTop="10dp"
+        android:text="@string/rb3"
+        android:textSize="20dp"
+         />
+
+    </LinearLayout>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TaskLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/ButtonLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="20"
+            android:textColorHint="#FF0000"
+            android:id="@+id/title"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:backgroundTint="@color/colorPrimary"
+                android:ems="20"
+                android:layout_marginTop="10dp"
+            android:textColorHint="#FF0000"
+            android:id="@+id/text" />
+        </android.support.design.widget.TextInputLayout>
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EventLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/ButtonLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Event"
+            android:id="@+id/EventText"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:entries="@array/EventList"
+            android:prompt="@string/EventPrompt" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MeetingLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/ButtonLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Venue"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="20"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#FF0000"
+                android:id="@+id/MeetingVenue" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="20"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#FF0000"
+                android:id="@+id/MeetingTime" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
