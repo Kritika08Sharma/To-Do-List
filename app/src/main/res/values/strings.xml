@@ -3,4 +3,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dev_1_name">Kritika Sharma</string>
+    <string name="dev_2_name">Shaivee Kumawat</string>
+    <string name="dev">Developed By :</string>
+    <string name="dev1desc">Student at Techno India NJR.</string>
+    <string name="rb1">Task</string>
+    <string name="rb2">Event</string>
+    <string name="rb3">Meeting</string>
+    <string name="hint1">Title</string>
+    <string-array name="EventList">
+        <item>Birthday</item>
+        <item>Marriage Anniversary</item>
+        <item>Others</item>
+    </string-array>
+    <string name="EventPrompt">Events</string>
 </resources>

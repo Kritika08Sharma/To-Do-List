@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:text="Events"
         android:textSize="40dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:id="@+id/TabEvent"/>
 
 </FrameLayout>

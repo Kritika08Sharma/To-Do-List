@@ -1,5 +1,6 @@
 package myapplication.app1.todolist;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,10 +8,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.R.attr.id;
@@ -19,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout Tab;
     ViewPager ViewPg;
+
+    Intent intent,intent1;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -59,13 +65,18 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.about :
-                Toast.makeText(this,"this is about us",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"this is about us",Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(intent);
                 break;
             case R.id.set :
                 Toast.makeText(this,"this is setting",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.add :
-                Toast.makeText(this,"this is create",Toast.LENGTH_SHORT).show();
+                intent1 = new Intent(MainActivity.this,EventCreation.class);
+                startActivity(intent1);
+
+
                 break;
             default:
                 Toast.makeText(this,"this is create",Toast.LENGTH_SHORT).show();
@@ -85,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             if(position==0)
+
                 return new Tasks();
 
             if(position==1)
