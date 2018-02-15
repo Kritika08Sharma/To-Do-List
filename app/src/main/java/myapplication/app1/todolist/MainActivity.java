@@ -23,8 +23,16 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout Tab;
     ViewPager ViewPg;
+<<<<<<< HEAD
 
     Intent intent,intent1;
+=======
+<<<<<<< HEAD
+    Intent intent,intent1;
+=======
+    Intent intent;
+>>>>>>> 5fee78696f40f8832eec758866a5518edd95cd91
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

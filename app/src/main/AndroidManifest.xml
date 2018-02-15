@@ -16,8 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".AboutUs" />
         <activity android:name=".EventCreation"></activity>
+=======
+<<<<<<< HEAD
+        <activity android:name=".AboutUs" />
+        <activity android:name=".EventCreation"></activity>
+=======
+        <activity android:name=".AboutUs"></activity>
+>>>>>>> 5fee78696f40f8832eec758866a5518edd95cd91
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
     </application>
 
 </manifest>

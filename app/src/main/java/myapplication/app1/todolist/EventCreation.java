@@ -1,5 +1,6 @@
 package myapplication.app1.todolist;
 
+<<<<<<< HEAD
 import android.app.DatePickerDialog;
 import android.icu.text.SimpleDateFormat;
 import android.icu.util.Calendar;
@@ -34,19 +35,38 @@ public class EventCreation extends AppCompatActivity {
     Database db;
     SimpleDateFormat dateFormatter;
 
+=======
+import android.app.usage.UsageEvents;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+
+public class EventCreation extends AppCompatActivity {
+
+    RadioButton rb1;
+    RadioButton rb2;
+    RadioButton rb3;
+    LinearLayout Task,Event,Meeting;
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_creation);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
         rb1 = (RadioButton) findViewById(R.id.rb1);
         rb2 = (RadioButton) findViewById(R.id.rb2);
         rb3 = (RadioButton) findViewById(R.id.rb3);
         Task = (LinearLayout) findViewById(R.id.TaskLayout);
         Event = (LinearLayout) findViewById(R.id.EventLayout);
         Meeting = (LinearLayout) findViewById(R.id.MeetingLayout);
+<<<<<<< HEAD
         EventTime =(EditText) findViewById(R.id.EventTime);
         Tasktitle = (EditText) findViewById(R.id.title);
         text1 = (EditText) findViewById(R.id.text1);
@@ -60,6 +80,9 @@ public class EventCreation extends AppCompatActivity {
         b2 = (Button) findViewById(R.id.b2);
         b3 = (Button) findViewById(R.id.b3);
         db = new Database(this);
+=======
+
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
         rb1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,6 +110,7 @@ public class EventCreation extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
         MeetingTime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,5 +177,7 @@ public class EventCreation extends AppCompatActivity {
 
 
 
+=======
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
     }
 }

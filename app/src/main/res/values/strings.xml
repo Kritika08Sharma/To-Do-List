@@ -7,6 +7,10 @@
     <string name="dev_2_name">Shaivee Kumawat</string>
     <string name="dev">Developed By :</string>
     <string name="dev1desc">Student at Techno India NJR.</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
     <string name="rb1">Task</string>
     <string name="rb2">Event</string>
     <string name="rb3">Meeting</string>
@@ -17,4 +21,9 @@
         <item>Others</item>
     </string-array>
     <string name="EventPrompt">Events</string>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5fee78696f40f8832eec758866a5518edd95cd91
+>>>>>>> 868ad9a046132997d2d128daa4936bfa5708b8e6
 </resources>
